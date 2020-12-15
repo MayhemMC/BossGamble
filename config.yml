@@ -1,0 +1,74 @@
+# NPC name
+# If the gambler is created using `/gambler create`, what should the name above the npc be
+npc-name: '&8&l» &d&nBar Tender&8&l «'
+
+# How much should the price be multiplied by if the player wins
+# Default: 2.0 (double)
+win-multiplier: 2.0
+
+# Name of the drink the bartender offers
+drink-name: '&dBuy a &n%name%'
+
+# Title of the GUI/inventory of the bartender
+gui-title: 'Buy a drink'
+
+# Message for when a drink is held down (won)
+win-message: '&6You held down your drink and earned &a$%win%&6'
+
+# Message for when a drink is lost
+lost-message: '&7Better luck next time.'
+
+# Message for when the drink is too expensive
+cant-afford-message: '&4You can''t afford this drink.'
+
+# Give player nausa effect for a breif second if they lose
+nausea-on-loss: true
+
+# Basicly the lore when you hover over the drink in the inventory
+description:
+- '&7Price: &d$%price%'
+- '&7Chance of Winning: &d%odds%%'
+- '&7Win Cash: &d$%win%'
+
+# The array of drinks the bartender will offer
+drinks:
+#  - name:
+#    price: Max 32 bit integer
+#    odds: Decimal 0 - 1
+#    color: Color in integer format
+  - name: 'Beer'
+    price: 200
+    odds: 0.60
+    color: 0xaa00aa
+  - name: 'Tequila'
+    price: 5000
+    odds: 0.55
+    color: 0x8000a8
+  - name: 'Whiskey'
+    price: 10000
+    odds: 0.50
+    color: 0xaa0088
+  - name: 'Wine'
+    price: 25000
+    odds: 0.45
+    color: 0x800060
+  - name: 'Gin'
+    price: 50000
+    odds: 0.40
+    color: 0x600080
+  - name: 'Vodka'
+    price: 100000
+    odds: 0.35
+    color: 0x800040
+  - name: 'Manhattan'
+    price: 250000
+    odds: 0.30
+    color: 0x400080
+  - name: 'Bourbon'
+    price: 500000
+    odds: 0.25
+    color: 0x600060
+  - name: 'Rum'
+    price: 1000000
+    odds: 0.20
+    color: 0x400040
